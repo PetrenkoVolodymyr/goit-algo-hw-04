@@ -1,6 +1,6 @@
 def total_salary(path):
     try:
-        with open(path) as file:
+        with open(path) as file: #!!!!!!! utf-8
             sum = 0
             lines = file.readlines()
             for line in lines:
