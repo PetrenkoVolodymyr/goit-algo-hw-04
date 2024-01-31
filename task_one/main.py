@@ -7,11 +7,10 @@ def total_salary(path):
                 salary = float(line.split(',')[1])
                 sum += salary
             average = sum / len(lines)
-            outcome = (sum, average)
+            outcome = (sum, average) 
     except Exception as error:
         outcome = type(error).__name__
     return(outcome)
-
 
 
 
