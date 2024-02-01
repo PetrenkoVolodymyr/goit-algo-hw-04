@@ -15,7 +15,7 @@ def add_contact(args, contacts):
 def change_contact(args, contacts):
     name, phone = args
     contacts[name] = phone
-    return "Contact changed."
+    return "Contact updated."
 
 def get_contact(args, contacts):
     return contacts[args[0]]
@@ -28,7 +28,7 @@ def main():
         user_input = input("Enter a command: ")
         command, *args = parse_input(user_input)
 
-        if command in ["close", "exit","1"]:
+        if command in ["close", "exit"]:
             print("Good bye!")
             break
         elif command == "hello":

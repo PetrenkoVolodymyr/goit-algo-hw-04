@@ -1,7 +1,7 @@
 def get_cats_info(path):
     try:
         list = []
-        with open(path) as file:  #!!! uts-8
+        with open(path, encoding='utf-8') as file:
             lines = file.readlines()
             for line in lines:
                 id = {"id": line.split(',')[0], 
