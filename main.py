@@ -12,7 +12,7 @@ def main():
         adress= pathlib.Path(input)
 
     try:
-        for child in pathlib.Path(adress).iterdir():
+        for child in pathlib.Path(adress).glob('**/*'):
             if os.path.isdir(child):
                 print(f"{Fore.BLUE} [FOLDER] {Path(child).name} {Fore.RESET}")
             else:
